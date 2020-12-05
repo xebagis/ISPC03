@@ -52,7 +52,7 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title text-center">Consúltanos</h5>
+          <h5 class="card-title text-center">Trivia. ¡A jugar!</h5>
           <p class="card-text text-center">A través de este <strong>Formulario </strong>puedes enviarnos
           <br>cualquier tipo de <strong>inquietud </strong>que llegues a tener,
           <br>y para con la cual podamos <strong>ayudarte</strong>.
@@ -65,48 +65,34 @@
     </div>
   </div>
 
+<div>
+    <h3>Pregunta:</h3>
+    <br>
+    <p>¿Chancleta?</p>
 
-
-
-
-<!-- FORM -->
-
-
-
-
-<form>
-    <div class="form-group col-8">
-      <label for="exampleFormControlInput1"></label>
-      <input type="text" class="form-control text-center" id="FormInput1" placeholder="Nombre" required autofocus autocomplete>
-      <label for="FormInput1"></label>
-      <input type="text" class="form-control text-center id="FormInput2" placeholder="Apellido" required autocomplete>
-      <label for="FormInput1"></label>
-      <input type="email" class="form-control text-center" id="FormInput3" placeholder="nombre@email.com" required autocomplete>
-    </div>
+    <input type="radio" id="op1" name="option" value="incorrecto" checked>Opción 1</input>
+    <br>
+    <input type="radio" id="op2" name="option" value="incorrecto">Opción 2</input>
+    <br>
+      <input type="radio" id="op3" name="option" value="incorrecto">Opción 3</input>
+    <br>
+      <input type="radio" id="op4" name="option" value="correcto">Opción 4</input>
+    <br>
+      <input type="radio" id="op5" name="option" value="incorrecto">Opción 5</input>
+    <br><br>
+    <button id="btn1" onclick="adivinar()">Click me</button>
     
-    <div class="form-group col-8 text-center">
+    <div id="respuesta"></div>
     <br>
-      <label for="exampleFormControlSelect1">¿En qué podemos ayudarte? Puedes elegir entre las siguientes opciones:</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>Quiero asesoramiento para el desarrollo de un sitio web</option>
-        <option>Quiero darle una nueva apariencia a un sitio web ya existente</option>
-        <option>Quiero quedar mejor posicionado en las búsquedas de Google</option>
-        <option>Quiero consultar por presupuestos y tiempos de entrega</option>
-        <option>Quiero formar parte del Staff de Coding-Dog</option>
-      </select>
-    </div>
-    
-    <div class="form-group col-8 text-center">
-    <br>
-        <label for="exampleFormControlTextarea1">Si ninguna opción se ajusta a tu consulta, escríbenos aquí abajo:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <br>
+    <div id="pistas"></div>
 
-    <div class="form-button">
-        <a href="enviado.html"><input class="btn btn-primary btn-block col-4"  type="submit" value="Enviar"></a>
-    </div>
-  </form>
+    <button id="btn2" value="ocultar" onclick="volverAJugar()">Volver a jugar</button>
+    
+</div>
+
+
+
+
 </div>
 
 </div>
@@ -124,7 +110,7 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    <script src="js/triviascript.js"></script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
