@@ -16,7 +16,12 @@
     margin: auto;
 }
 
-
+/* TRIVIA LARGER DIV */
+.larger-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* FOOTER BOTTOM CALCULATE */
 .main-container {

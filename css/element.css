@@ -69,6 +69,13 @@
     margin-top: 15px;
 }
 
+/* TRIVIA BUTTON */
+
+.btn1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
 
 /* FOOTER */
 

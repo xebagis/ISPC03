@@ -37,18 +37,18 @@
       <a class="nav-link" href="mercado.html">Mercado</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="trivia.html">Trivia</a>
+      <a class="nav-link active disabled" href="#">Trivia</a>
     </li>
   </ul>
 
 
-<!-- PRESENTATION CARD -->
+    <!-- PRESENTATION CARD -->
 
 <div class="card mb-3" style="max-width: 740px;">
     <div class="row no-gutters">
       <div class="col-md-3">
         <img src="images/profile.jpg" class="card-img" alt="Coding Dog">
-        <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary disabled">Contacto</button></a>
+        <a href="contacto.html"><button type="button" class="btn btn-sm btn-outline-secondary">Contacto</button></a>
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -65,38 +65,87 @@
     </div>
   </div>
 
-<div>
-    <h3>Pregunta:</h3>
-    <br>
-    <p>¿Chancleta?</p>
 
-    <input type="radio" id="op1" name="option" value="incorrecto" checked>Opción 1</input>
+    <!-- TRIVIA -->
+
+<div>
+    <h3 class="text-center mt-5">Pregunta:</h3>
     <br>
-    <input type="radio" id="op2" name="option" value="incorrecto">Opción 2</input>
-    <br>
-      <input type="radio" id="op3" name="option" value="incorrecto">Opción 3</input>
-    <br>
-      <input type="radio" id="op4" name="option" value="correcto">Opción 4</input>
-    <br>
-      <input type="radio" id="op5" name="option" value="incorrecto">Opción 5</input>
-    <br><br>
-    <button id="btn1" onclick="adivinar()">Click me</button>
+    <p class="text-center mb-5">¿Chancleta?</p>
+
+    <div class="larger-div">
+    <div class="input-group mb-3 col-8">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="radio" name="no-repeat">
+          </div>
+        </div>
+        <label type="text" class="form-control">Soroastro</label>
+    </div>
+    </div>
+
+    <div class="larger-div">
+    <div class="input-group mb-3 col-8">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="radio"name="no-repeat">
+          </div>
+        </div>
+        <label type="text" class="form-control">Lalalala</label>
+    </div>
+        </div>
+
+    <div class="larger-div">
+    <div class="input-group mb-3 col-8">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="radio" name="no-repeat">
+          </div>
+        </div>
+        <label type="text" class="form-control">Cacatúa</label>
+    </div>
+    </div>
+    
+    <div class="larger-div">
+    <div class="input-group mb-3 col-8">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input id="op4" type="radio" name="no-repeat">
+          </div>
+        </div>
+        <label type="text" class="form-control">Opción correcta</label>
+    </div>
+        </div>  
+
+    <div class="larger-div">
+    <div class="input-group mb-3 col-8">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="radio" name="no-repeat">
+          </div>
+        </div>
+        <label type="text" class="form-control">El fantasma escritor</label>
+    </div>
+        </div>  
+
+    <button id="btn1" type="button" class="btn btn-outline-primary col-3 btn1" onclick="adivinar()">¡Probar!</button>
+    <button id="btn2" type="button" class="btn btn-primary col-3 mt-3 btn1" value="ocultar" onclick="volverAJugar()">¡Volver a Jugar!</button>
+
     
     <div id="respuesta"></div>
     <br>
     <div id="pistas"></div>
 
-    <button id="btn2" value="ocultar" onclick="volverAJugar()">Volver a jugar</button>
-    
 </div>
 
 
 
 
 </div>
-
 </div>
 
+
+    <!-- FOOTER -->
 
 <footer class="footer col-md-12">
   <a href=""><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#enviar">&copy Coding-Dog 2020</button></a>
