@@ -1,0 +1,36 @@
+/* CAROUSEL */
+
+.carousel__text--color {
+    color: black;
+}
+
+.carousel__text--whiteshadow {
+    text-shadow: 2px 2px 1px white;
+}
+
+.carousel__text--blackshadow {
+    text-shadow: 2px 2px 1px black;
+}
+
+.card__deck--p {
+    line-height: 2.3em;
+}
+
+strong {
+    color: cornflowerblue;
+}
+
+
+
+/* FORM */
+
+.form-button a {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.form-button a {
+    text-decoration: none;
+}
+

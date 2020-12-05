@@ -1,0 +1,25 @@
+/* NAV */
+
+.nav {
+    margin: 10px auto 0px;
+}
+
+
+
+/* PRESENTATION CARD */
+
+.card {
+    margin: 40px auto 0px;
+}
+
+.form-group {
+    margin: auto;
+}
+
+
+
+/* FOOTER BOTTOM CALCULATE */
+.main-container {
+    /* border: 3px solid red; */
+    min-height: calc(100vh - 175px);
+}
