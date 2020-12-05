@@ -34,7 +34,7 @@
       <a class="nav-link" href="frameworks.html">Frameworks</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="mercado.html">Mercado</a>
+      <a class="nav-link disabled" href="mercado.html">Mercado</a>
     </li>
     <li class="nav-item">
       <a class="nav-link active disabled" href="#">Trivia</a>
@@ -53,10 +53,10 @@
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title text-center">Trivia. ¡A jugar!</h5>
-          <p class="card-text text-center">A través de este <strong>Formulario </strong>puedes enviarnos
-          <br>cualquier tipo de <strong>inquietud </strong>que llegues a tener,
-          <br>y para con la cual podamos <strong>ayudarte</strong>.
-          <br>¡Sólo complétalo y nos pondremos en contacto contigo!
+          <p class="card-text text-center">Te invitamos a realizar una <strong>Trivia</strong>,
+          <br>a ver si puedes acertar lo que te hemos transmitido,
+          <br>y comprobar si tu información sobre estos temas
+          <br>se encuentra <strong>actualizada</strong>. ¡Inténtalo!
 </p>
           <!-- <p>Aquí en <strong>Coding-Dog</strong> te daremos la respuesta</p> -->
           <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
@@ -68,67 +68,70 @@
 
     <!-- TRIVIA -->
 
-<div>
+<div class="trivia">
     <h3 class="text-center mt-5">Pregunta:</h3>
     <br>
-    <p class="text-center mb-5">¿Chancleta?</p>
+    <p class="text-center mb-5">¿Cuáles de los siguientes lenguajes de Programación
+        <br>se encuentran actualmente con mayor demanda laboral y, por lo tanto,
+        <br>sería muy conveniente que aprendas?
+    </p>
 
     <div class="larger-div">
-    <div class="input-group mb-3 col-8">
+    <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
           <div class="input-group-text">
             <input type="radio" name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">Soroastro</label>
+        <label type="text" class="form-control">Python / JAVA / JavaScript / C# </label>
     </div>
     </div>
 
     <div class="larger-div">
-    <div class="input-group mb-3 col-8">
+    <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
           <div class="input-group-text">
             <input type="radio"name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">Lalalala</label>
+        <label type="text" class="form-control">JavaScript / Python / JAVA / PHP</label>
     </div>
         </div>
 
     <div class="larger-div">
-    <div class="input-group mb-3 col-8">
+    <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
           <div class="input-group-text">
             <input type="radio" name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">Cacatúa</label>
+        <label type="text" class="form-control">JAVA / C# / C++ / Python</label>
     </div>
     </div>
     
     <div class="larger-div">
-    <div class="input-group mb-3 col-8">
+    <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
           <div class="input-group-text">
             <input id="op4" type="radio" name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">Opción correcta</label>
+        <label type="text" class="form-control">JavaScript / Python / JAVA / C#</label>
     </div>
         </div>  
 
     <div class="larger-div">
-    <div class="input-group mb-3 col-8">
+    <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
           <div class="input-group-text">
             <input type="radio" name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">El fantasma escritor</label>
+        <label type="text" class="form-control">Python / JavaScript / JAVA / PHP</label>
     </div>
         </div>  
 
-    <button id="btn1" type="button" class="btn btn-outline-primary col-3 btn1" onclick="adivinar()">¡Probar!</button>
+    <button id="btn1" type="button" class="btn btn-outline-primary col-3 mt-2 btn1" onclick="adivinar()">¡Probar!</button>
     <button id="btn2" type="button" class="btn btn-primary col-3 mt-3 btn1" value="ocultar" onclick="volverAJugar()">¡Volver a Jugar!</button>
 
     
@@ -138,7 +141,31 @@
 
 </div>
 
-
+<!-- MODAL -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </div>

@@ -69,7 +69,12 @@
     margin-top: 15px;
 }
 
-/* TRIVIA BUTTON */
+/* TRIVIA */
+
+.trivia h3{
+    color: cornflowerblue;
+    margin-bottom: -10px;
+}
 
 .btn1{
     display: flex;
