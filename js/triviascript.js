@@ -1,15 +1,20 @@
 let intentos = 3
 let opcionCorrecta = document.getElementById('op4')
 
-function ocultar(){
+function ocultarBtn1(){
+    document.getElementById('btn1').style.display="none"
+}
+
+function ocultarBtn2(){
     document.getElementById('btn2').style.display="none"
 }
 
-ocultar()
+ocultarBtn2()
 
 function mostrar(){
     document.getElementById('btn2').style.display="block"
 }
+
 
 function volverAJugar(){            
             window.location.reload(true)    
@@ -25,6 +30,7 @@ function adivinar(){
     if(opcionCorrecta.checked){
         alert('Ganaste capo!')
         window.location.reload(true)
+        return
     }
     
     if(intentos == 2){
@@ -43,6 +49,7 @@ function adivinar(){
             // pistas = document.getElementById('pistas')
             alert('Game over! Podés volver a intentar cuantas veces quieras.')
             mostrar()
+            ocultarBtn1()
         }
           else if(intentos < 0){
             respuesta = document.getElementById('respuesta')
