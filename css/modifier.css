@@ -21,7 +21,6 @@ strong {
 }
 
 
-
 /* FORM */
 
 .form-button a {
@@ -34,3 +33,24 @@ strong {
     text-decoration: none;
 }
 
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:420px){
+    .footer a button {
+       font-size: 12px;
+    }
+}
+
+@media all and (max-width:767px){
+    .trivia .larger-div label {
+        display: inline-table;
+    }
+}
+
+@media all and (max-width:480px){
+    #carouselExampleCaptions img{
+        min-height: 80px;
+        background-image: cover;
+    }
+}
