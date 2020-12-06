@@ -28,30 +28,33 @@ function adivinar(){
     }
     
     if(opcionCorrecta.checked){
-        alert('Ganaste capo!')
-        window.location.reload(true)
+        $('#modalAcierto').modal('show')
+        // window.location.reload(true)
         return
     }
     
     if(intentos == 2){
         // pistas = document.getElementById('pistas')
         // pistas.innerHTML = 'Te tiro una primer pista'
-        alert('Ups. Un ayudita: PHP no entra en el podio')
+        // alert('Ups. Un ayudita: PHP no entra en el podio')
+        $('#modalError1').modal('show')
         }
         else if(intentos == 1){
             // pistas = document.getElementById('pistas')
             // pistas.innerHTML = 'Te tiro una segunda pista'
-        alert('Ups otra vez. Última pista: "Jokers\'s Path Joins Carefully#"')
+        // alert('Ups otra vez. Última pista: "Jokers\'s Path Joins Carefully#"')
+        $('#modalError2').modal('show')
         }
         else if(intentos == 0){
             // respuesta = document.getElementById('respuesta')
             // respuesta.innerHTML = ""
             // pistas = document.getElementById('pistas')
-            alert('Game over! Podés volver a intentar cuantas veces quieras.')
+            // alert('Game over! Podés volver a intentar cuantas veces quieras.')
+            $('#modalError3').modal('show')
             mostrar()
             ocultarBtn1()
         }
-          else if(intentos < 0){
+        else if(intentos < 0){
             respuesta = document.getElementById('respuesta')
             respuesta.innerHTML = ""
             mostrar()

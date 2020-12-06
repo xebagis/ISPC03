@@ -44,22 +44,17 @@
 
     <!-- PRESENTATION CARD -->
 
-<div class="card mb-3" style="max-width: 740px;">
+<div class="card mb-3 shadow" style="max-width: 740px;">
     <div class="row no-gutters">
-      <div class="col-md-3">
-        <img src="images/profile.jpg" class="card-img" alt="Coding Dog">
-        <a href="contacto.html"><button type="button" class="btn btn-sm btn-outline-secondary">Contacto</button></a>
-      </div>
-      <div class="col-md-8">
+      <div class="col-md-12">
         <div class="card-body">
           <h5 class="card-title text-center">Trivia. ¡A jugar!</h5>
           <p class="card-text text-center">Te invitamos a realizar una <strong>Trivia</strong>,
           <br>a ver si puedes acertar lo que te hemos transmitido,
           <br>y comprobar si tu información sobre estos temas
           <br>se encuentra <strong>actualizada</strong>. ¡Inténtalo!
-</p>
-          <!-- <p>Aquí en <strong>Coding-Dog</strong> te daremos la respuesta</p> -->
-          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <br>Si pierdes... ¡A releerlo todo!
+          </p>
         </div>
       </div>
     </div>
@@ -71,68 +66,68 @@
 <div class="trivia">
     <h3 class="text-center mt-5">Pregunta:</h3>
     <br>
-    <p class="text-center mb-5">¿Cuáles de los siguientes lenguajes de Programación
-        <br>se encuentran actualmente con mayor demanda laboral y, por lo tanto,
+    <p class="text-center mb-5">¿Cuáles de los siguientes <i>Lenguajes de Programación</i>
+        <br>se encuentran actualmente con <i>mayor demanda laboral</i> y, por lo tanto,
         <br>sería muy conveniente que aprendas?
     </p>
 
     <div class="larger-div">
     <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
-          <div class="input-group-text">
-            <input type="radio" name="no-repeat">
+          <div class="input-group-text shadow-sm">
+            <input id="option1" type="radio" name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">Python / JAVA / JavaScript / C# </label>
+        <label type="text" class="form-control shadow-sm">Python / JAVA / JavaScript / C# </label>
     </div>
     </div>
 
     <div class="larger-div">
     <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
-          <div class="input-group-text">
+          <div class="input-group-text shadow-sm">
             <input type="radio"name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">JavaScript / Python / JAVA / PHP</label>
+        <label type="text" class="form-control shadow-sm">JavaScript / Python / JAVA / PHP</label>
     </div>
         </div>
 
     <div class="larger-div">
     <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
-          <div class="input-group-text">
+          <div class="input-group-text shadow-sm">
             <input type="radio" name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">JAVA / C# / C++ / Python</label>
+        <label type="text" class="form-control shadow-sm">JAVA / C# / C++ / Python</label>
     </div>
     </div>
     
     <div class="larger-div">
     <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
-          <div class="input-group-text">
+          <div class="input-group-text shadow-sm">
             <input id="op4" type="radio" name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">JavaScript / Python / JAVA / C#</label>
+        <label type="text" class="form-control shadow-sm">JavaScript / Python / JAVA / C#</label>
     </div>
         </div>  
 
     <div class="larger-div">
     <div class="input-group mb-3 col-6 text-center">
         <div class="input-group-prepend">
-          <div class="input-group-text">
+          <div class="input-group-text shadow-sm">
             <input type="radio" name="no-repeat">
           </div>
         </div>
-        <label type="text" class="form-control">Python / JavaScript / JAVA / PHP</label>
+        <label type="text" class="form-control shadow-sm">Python / JavaScript / JAVA / PHP</label>
     </div>
         </div>  
 
-    <button id="btn1" type="button" class="btn btn-outline-primary col-3 mt-2 btn1" value="ocultarBtn1" onclick="adivinar()">¡Probar!</button>
-    <button id="btn2" type="button" class="btn btn-primary col-3 mt-3 btn1" value="ocultarBtn2" onclick="volverAJugar()">¡Volver a Jugar!</button>
+    <button id="btn1" type="button" class="btn btn-outline-primary col-3 mt-2 btn1 shadow-sm" data-toggle="modalOption1" data-target="option1" value="ocultarBtn1" onclick="adivinar()">¡Probar!</button>
+    <button id="btn2" type="button" class="btn btn-primary col-3 mt-3 btn1 shadow-sm" value="ocultarBtn2" onclick="volverAJugar()">¡Volver a Jugar!</button>
 
     
     <div id="respuesta"></div>
@@ -142,31 +137,87 @@
 </div>
 
 <!-- MODAL -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button> -->
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal Error 1 -->
+  <div class="modal fade" id="modalError1" tabindex="-1" aria-labelledby="modalE1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title">Ups!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true">Primer pista</span>
           </button>
         </div>
-        <div class="modal-body">
-          ...
+        <div class="modal-body text-center">
+          PHP no llega a entrar en el podio. <br>
+          Te quedan dos intentos.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar</button>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Modal Error 2 -->
+  <div class="modal fade" id="modalError2" tabindex="-1" aria-labelledby="modalE2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Upsss!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">Última pista</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          "Joker's Path Joins Carefully#"
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Error 3 -->
+  <div class="modal fade" id="modalError3" tabindex="-1" aria-labelledby="modalE3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">0 de 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">GAME OVER</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          ¡Podés volver a participar!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Acierto -->
+  <div class="modal fade" id="modalAcierto" tabindex="-1" aria-labelledby="modalA" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">¡Felicitaciones!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">ACERTASTE</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/sonic.gif" alt="Sonic dance">
+        </div>
+        <div class="modal-footer">
+          <a href="index.html"><button type="button" class="btn btn-outline-primary">Inicio</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 </div>
@@ -174,9 +225,9 @@
 
     <!-- FOOTER -->
 
-<footer class="footer col-md-12">
-  <a href=""><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#enviar">&copy Coding-Dog 2020</button></a>
-  <a href="#"><button type="button" class="btn btn-light btn-lg">Contáctanos</button></a>
+<footer class="footer footer-index col-md-12">
+    <a href=""><button type="button" class="btn btn-light btn-lg shadow">&copy Coding-Dog 2020</button></a>
+    <a href="contacto.html"><button type="button" class="btn btn-light btn-lg shadow">Contáctanos</button></a>
 </footer>
 
 
